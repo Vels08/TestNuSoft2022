@@ -6,7 +6,10 @@ const cursoSchema = new Schema({
         required: true
     },
     
-    creditos: Number,
+    creditos: {
+        type: Number,
+        required: true,
+    }
 })
 
 export const cursoModel = model("curso", cursoSchema)

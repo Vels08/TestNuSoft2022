@@ -27,13 +27,12 @@ const estudianteSchema = new Schema({
     required: true,
   },
   estado: {
-    type: String,
+    type: Number,
     required: true,
-    enum: ["Activo", "Inactivo"],
   },
   geolocation: {
     latitud: String,
-    altitud: String,
+    longitud: String,
   },
 
 })
